@@ -17,6 +17,7 @@ public class FactoryDiscoveryTests
         "CenIoRy104ControllerFactory",
         "CenOdtOccupancySensorBaseControllerFactory",
         "CenRfgwControllerFactory",
+        "ClwDimFlvExPControllerFactory",
         "Din8sw8ControllerFactory",
         "DinCenCn2ControllerFactory",
         "DinIo8ControllerFactory",

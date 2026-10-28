@@ -17,6 +17,7 @@ public class FactoryMetadataTests
         ("CenIoRy104ControllerFactory", new[] { "ceniory104" }),
         ("CenOdtOccupancySensorBaseControllerFactory", new[] { "cenodtcpoe", "cenodtocc" }),
         ("CenRfgwControllerFactory", new[] { "cenrfgwex", "cenerfgwpoe", "cengwexer", "internal" }),
+        ("ClwDimFlvExPControllerFactory", new[] { "clwdimflvexp" }),
         ("Din8sw8ControllerFactory", new[] { "din8sw8" }),
         ("DinCenCn2ControllerFactory", new[] { "dincencn2", "dincencn2poe", "din-cencn2", "din-cencn2-poe" }),
         ("DinIo8ControllerFactory", new[] { "DinIo8" }),
@@ -34,7 +35,7 @@ public class FactoryMetadataTests
     {
         var source = AssemblyFixture.FindSourceForClass(factoryClass);
         source.Should().NotBeNull($"source for {factoryClass} should exist");
-        source.Should().Contain("MinimumEssentialsFrameworkVersion = \"3.0.0-fix-correct-interface-name.1\"");
+        source.Should().Contain("MinimumEssentialsFrameworkVersion = \"3.0.0\"");
     }
 
     [Theory]
